@@ -46,27 +46,13 @@ const services = [
   },
 ];
 
-// ПОДПИСИ К КАДРАМ РАСКАДРОВКИ корпоративного ролика.
-// position отвечает за то, какой фрагмент общей картинки виден в карточке.
-const corporateStoryboard = [
-  { number: "01", title: "Завязка", position: "0% 0%" },
-  { number: "02", title: "Персонаж", position: "33.333% 0%" },
-  { number: "03", title: "Работа с данными", position: "66.667% 0%" },
-  { number: "04", title: "Запрос системе", position: "100% 0%" },
-  { number: "05", title: "Конфликт", position: "0% 50%" },
-  { number: "06", title: "Перелом", position: "33.333% 50%" },
-  { number: "07", title: "Образ будущего", position: "100% 50%" },
-  { number: "08", title: "Финал", position: "0% 100%" },
-];
-
 export default function Home() {
   return (
     <main>
-      {/* ШАПКА: замени «Имя Фамилия» и при желании убери слово «черновик». */}
+      {/* ШАПКА С ИМЕНЕМ И ОСНОВНОЙ НАВИГАЦИЕЙ. */}
       <header className="site-header">
         <a className="logo" href="#top" aria-label="В начало">
           Анна Борзых
-          <span>черновик</span>
         </a>
         <nav aria-label="Основная навигация">
           <a href="#works">Работы</a>
@@ -143,8 +129,8 @@ export default function Home() {
           <p className="eyebrow">Избранные работы</p>
           <h2>Проекты, где дизайн работает вместе с контентом</h2>
           <p>
-            В черновике уже стоят реальные направления и материалы. Названия,
-            роли и формулировки можно уточнить перед публикацией.
+            В подборке — презентации, AI-видео и визуальные проекты для digital
+            и строительной отрасли.
           </p>
         </div>
 
@@ -230,39 +216,74 @@ export default function Home() {
             </div>
           </article>
 
-          <article className="case-card case-featured corporate-case">
-            {/* РАСКАДРОВКА: общая картинка public/work/corporate-ai-reel.jpg. */}
-            <div className="storyboard" aria-label="Раскадровка корпоративного AI-ролика">
-              <div className="storyboard-header">
-                <span>Storyboard</span>
-                <span>8 ключевых кадров</span>
-              </div>
-              <div className="storyboard-grid">
-                {corporateStoryboard.map((shot) => (
-                  <figure className="storyboard-shot" key={shot.number}>
-                    <div
-                      className="storyboard-image"
-                      role="img"
-                      aria-label={`${shot.number}. ${shot.title}`}
-                      style={{ backgroundPosition: shot.position }}
-                    />
-                    <figcaption>
-                      <span>{shot.number}</span>
-                      {shot.title}
-                    </figcaption>
-                  </figure>
-                ))}
-              </div>
+          <article className="case-card case-featured video-portfolio-case">
+            {/* ДВА AI-ВИДЕОКЕЙСА вместо статичной раскадровки. */}
+            <div className="video-showcase-grid">
+              <figure className="video-project">
+                <video
+                  className="portfolio-video"
+                  controls
+                  playsInline
+                  preload="metadata"
+                  poster="/work/video/construction-conductor-poster.jpg"
+                  aria-label="AI-ролик Дирижёр строительства"
+                >
+                  <source
+                    src="/work/video/construction-conductor.mp4"
+                    type="video/mp4"
+                  />
+                  Ваш браузер не поддерживает воспроизведение видео.
+                </video>
+                <figcaption>
+                  <span>01 · AI-видео</span>
+                  <strong>Дирижёр строительства</strong>
+                  <p>
+                    Визуальная метафора цифрового управления стройкой: масштаб,
+                    динамика и AR-слой поверх реального объекта.
+                  </p>
+                </figcaption>
+              </figure>
+
+              <figure className="video-project">
+                <video
+                  className="portfolio-video"
+                  controls
+                  playsInline
+                  preload="metadata"
+                  poster="/work/video/mira-ar-scenario-poster.jpg"
+                  aria-label="Сценарный ролик о работе с MIRA и AR на стройплощадке"
+                >
+                  <source
+                    src="/work/video/mira-ar-scenario.mp4"
+                    type="video/mp4"
+                  />
+                  Ваш браузер не поддерживает воспроизведение видео.
+                </video>
+                <figcaption>
+                  <span>02 · Сценарный ролик</span>
+                  <strong>MIRA: AR на стройплощадке</strong>
+                  <p>
+                    История о переходе от кабинета к реальному объекту и работе
+                    с проектом через дополненную реальность.
+                  </p>
+                </figcaption>
+              </figure>
             </div>
+
             <div className="case-copy">
               <div>
-                <p className="case-index">02 / Видео</p>
-                <h3>Корпоративная история о цифровом продукте</h3>
+                <p className="case-index">02 / AI-контент · Видео · Строительство</p>
+                <h3>Цифровые технологии как визуальная история</h3>
               </div>
               <p>
-                Кинематографичная подача сложной B2B-темы: персонаж, конфликт,
-                интерфейс продукта и финальный образ будущего.
+                Два ролика о строительных продуктах: от разработки сценария и
+                генерации кадров до монтажа и цельной визуальной драматургии.
               </p>
+              <ul aria-label="Роль в проектах">
+                <li>Сценарий и раскадровка</li>
+                <li>AI-генерация</li>
+                <li>Монтаж и постпродакшн</li>
+              </ul>
             </div>
           </article>
         </div>
@@ -516,6 +537,15 @@ export default function Home() {
           <h2>Дизайнер, который умеет не только «сделать красиво»</h2>
         </div>
         <div className="about-grid">
+          <figure className="about-photo-card">
+            <Image
+              src="/work/about/anna-borzykh.webp"
+              alt="Анна Борзых — Content Designer"
+              fill
+              unoptimized
+              sizes="(max-width: 800px) 100vw, 28vw"
+            />
+          </figure>
           <div className="about-card about-main">
             <p>
               Я — контент-дизайнер с профильным образованием в области
@@ -533,7 +563,7 @@ export default function Home() {
           <div className="about-card experience-card">
             <span className="card-label">Опыт работы</span>
             <h3>Content Designer / Graphic Designer</h3>
-            <p>[МетроТрансМост] · [02.2026 - н.в.]</p>
+            <p>МетроТрансМост · 02.2026 — н.в.</p>
             <ul>
               <li>Визуальный и видеоконтент</li>
               <li>Презентации и digital-материалы</li>

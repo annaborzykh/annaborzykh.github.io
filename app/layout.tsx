@@ -14,7 +14,6 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   // Название вкладки браузера и описание для поисковиков/превью ссылки.
-  // Здесь тоже замени «Имя Фамилия» на свои данные.
   title: "Анна Борзых — Content Designer",
   description:
     "Портфолио Content Designer: презентации и digital-материалы, AI-контент, видео и монтаж.",

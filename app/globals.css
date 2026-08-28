@@ -1447,3 +1447,118 @@ a:focus-visible {
     transition-duration: 0.01ms !important;
   }
 }
+
+
+/* Видеокейсы */
+.video-portfolio-case {
+  grid-template-columns: minmax(0, 1.3fr) minmax(340px, 0.7fr);
+}
+
+.video-showcase-grid {
+  min-width: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+  gap: 18px;
+  padding: 18px;
+  background:
+    radial-gradient(circle at 18% 5%, rgba(140, 74, 165, 0.28), transparent 24rem),
+    #171318;
+}
+
+.video-project {
+  overflow: hidden;
+  margin: 0;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 22px;
+  background: #0c0a0d;
+  color: white;
+}
+
+.portfolio-video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  object-fit: cover;
+  background: #080708;
+}
+
+.video-project figcaption {
+  display: grid;
+  gap: 8px;
+  padding: 18px;
+}
+
+.video-project figcaption span {
+  color: var(--mint);
+  font-size: 10px;
+  font-weight: 760;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.video-project figcaption strong {
+  font-size: clamp(20px, 2vw, 28px);
+  letter-spacing: -0.03em;
+}
+
+.video-project figcaption p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.66);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+/* Фото в блоке «Обо мне» */
+.about-grid {
+  grid-template-columns: minmax(250px, 0.56fr) minmax(0, 1.14fr) minmax(270px, 0.7fr);
+}
+
+.about-photo-card {
+  position: relative;
+  overflow: hidden;
+  min-height: 420px;
+  margin: 0;
+  border-radius: 28px;
+  background: var(--lilac);
+}
+
+.about-photo-card img {
+  object-fit: cover;
+  object-position: 50% 42%;
+}
+
+@media (max-width: 1100px) {
+  .video-portfolio-case {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 800px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-photo-card {
+    min-height: 520px;
+  }
+}
+
+@media (max-width: 620px) {
+  .video-showcase-grid {
+    grid-template-columns: none;
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(260px, 82vw);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-color: var(--violet) rgba(255, 255, 255, 0.12);
+  }
+
+  .video-project {
+    scroll-snap-align: start;
+  }
+
+  .about-photo-card {
+    min-height: 390px;
+  }
+}
