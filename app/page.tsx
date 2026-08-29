@@ -390,7 +390,7 @@ export default function Home() {
             <div className="deck-preview deck-preview-dark">
               <div className="slide slide-main">
                 <Image
-                  src="/work/presentations/vk-cover.webp"
+                  src="/work/presentations/vk-cover.jpg"
                   alt="Титульный слайд презентации о корпоративном AI-мерче"
                   fill
                   unoptimized
@@ -399,7 +399,7 @@ export default function Home() {
               </div>
               <div className="slide slide-secondary">
                 <Image
-                  src="/work/presentations/vk-apparel.webp"
+                  src="/work/presentations/vk-apparel.jpg"
                   alt="Слайд с визуализацией одежды и аксессуаров VK AI"
                   fill
                   unoptimized
@@ -489,7 +489,7 @@ export default function Home() {
               </div>
               <div className="slide slide-secondary">
                 <Image
-                  src="/work/presentations/brandbook-photo.webp"
+                  src="/work/presentations/brandbook-photo.jpg"
                   alt="Слайд брендбука с правилами фотостиля"
                   fill
                   unoptimized
