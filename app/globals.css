@@ -1562,3 +1562,142 @@ a:focus-visible {
     min-height: 390px;
   }
 }
+
+
+/* Кейс «Горизонт»: путь от технической модели к финальному видео */
+.horizon-case {
+  grid-template-columns: minmax(0, 1.5fr) minmax(330px, 0.5fr);
+}
+
+.horizon-story {
+  min-width: 0;
+  display: grid;
+  grid-template-columns: minmax(270px, 0.86fr) 56px minmax(340px, 1.14fr);
+  align-items: center;
+  gap: 14px;
+  padding: 18px;
+  background:
+    radial-gradient(circle at 82% 16%, rgba(190, 239, 216, 0.16), transparent 28rem),
+    #171318;
+}
+
+.horizon-stage {
+  min-width: 0;
+  display: grid;
+  gap: 12px;
+}
+
+.horizon-stage-heading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+}
+
+.horizon-stage-heading span {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--mint);
+  color: #171318;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.horizon-stage-heading strong {
+  font-size: 13px;
+  letter-spacing: 0.02em;
+}
+
+.horizon-model-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.horizon-model-grid figure {
+  position: relative;
+  overflow: hidden;
+  min-height: 118px;
+  margin: 0;
+  border-radius: 14px;
+  background: #f4f2ef;
+}
+
+.horizon-model-grid .horizon-model-main {
+  grid-column: 1 / -1;
+  min-height: 250px;
+}
+
+.horizon-model-grid img {
+  object-fit: cover;
+}
+
+.horizon-transition {
+  display: grid;
+  justify-items: center;
+  gap: 8px;
+  color: rgba(255, 255, 255, 0.46);
+  font-size: 9px;
+  font-weight: 760;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.horizon-transition i {
+  color: var(--mint);
+  font-size: 30px;
+  font-style: normal;
+}
+
+.horizon-video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 18px;
+  background: #080708;
+  object-fit: cover;
+}
+
+.deck-link-secondary {
+  margin-top: 10px;
+  background: var(--plum);
+  color: white;
+}
+
+@media (max-width: 1100px) {
+  .horizon-case {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 800px) {
+  .horizon-story {
+    grid-template-columns: 1fr;
+  }
+
+  .horizon-transition {
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+  }
+
+  .horizon-transition i {
+    transform: rotate(90deg);
+  }
+}
+
+@media (max-width: 520px) {
+  .horizon-story {
+    padding: 12px;
+  }
+
+  .horizon-model-grid .horizon-model-main {
+    min-height: 190px;
+  }
+
+  .horizon-model-grid figure {
+    min-height: 94px;
+  }
+}

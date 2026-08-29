@@ -286,6 +286,89 @@ export default function Home() {
               </ul>
             </div>
           </article>
+
+          <article className="case-card case-featured horizon-case">
+            {/* КЕЙС «ОТ 3D-МОДЕЛИ К ВИДЕО»: три исходных ракурса и финальный ролик. */}
+            <div className="horizon-story">
+              <div className="horizon-stage horizon-model-stage">
+                <div className="horizon-stage-heading">
+                  <span>01</span>
+                  <strong>Исходная 3D-модель</strong>
+                </div>
+                <div className="horizon-model-grid">
+                  <figure className="horizon-model-main">
+                    <Image
+                      src="/work/horizon/horizon-model-01.webp"
+                      alt="Исходная 3D-модель комплекса Горизонт, первый ракурс"
+                      fill
+                      unoptimized
+                      sizes="(max-width: 800px) 88vw, 36vw"
+                    />
+                  </figure>
+                  <figure>
+                    <Image
+                      src="/work/horizon/horizon-model-02.webp"
+                      alt="Исходная 3D-модель комплекса Горизонт, второй ракурс"
+                      fill
+                      unoptimized
+                      sizes="(max-width: 800px) 42vw, 18vw"
+                    />
+                  </figure>
+                  <figure>
+                    <Image
+                      src="/work/horizon/horizon-model-03.webp"
+                      alt="Исходная 3D-модель комплекса Горизонт, третий ракурс"
+                      fill
+                      unoptimized
+                      sizes="(max-width: 800px) 42vw, 18vw"
+                    />
+                  </figure>
+                </div>
+              </div>
+
+              <div className="horizon-transition" aria-hidden="true">
+                <span>модель</span>
+                <i>→</i>
+                <span>история</span>
+              </div>
+
+              <div className="horizon-stage horizon-film-stage">
+                <div className="horizon-stage-heading">
+                  <span>02</span>
+                  <strong>Архитектурное видео</strong>
+                </div>
+                <video
+                  className="horizon-video"
+                  controls
+                  playsInline
+                  preload="metadata"
+                  poster="/work/horizon/horizon-film-poster.jpg"
+                  aria-label="Архитектурный ролик Горизонт"
+                >
+                  <source src="/work/horizon/horizon-film.mp4" type="video/mp4" />
+                  Ваш браузер не поддерживает воспроизведение видео.
+                </video>
+              </div>
+            </div>
+
+            <div className="case-copy horizon-copy">
+              <div>
+                <p className="case-index">03 / 3D · AI-видео · Архитектура</p>
+                <h3>«Горизонт»: от модели к визуальной истории</h3>
+              </div>
+              <p>
+                Рабочая 3D-модель задала геометрию объекта. Затем форма получила
+                материалы, свет, окружение и движение — и превратилась в
+                кинематографичный архитектурный ролик.
+              </p>
+              <ul aria-label="Этапы проекта">
+                <li>Работа с исходной 3D-моделью</li>
+                <li>AI-визуализация архитектуры</li>
+                <li>Сценарий движения камеры</li>
+                <li>Монтаж и цвет</li>
+              </ul>
+            </div>
+          </article>
         </div>
       </section>
 
@@ -394,51 +477,6 @@ export default function Home() {
           </article>
 
           <article className="deck-case">
-            <div className="deck-preview deck-preview-lilac">
-              <div className="slide slide-main">
-                <Image
-                  src="/work/presentations/mindcare-product.webp"
-                  alt="Слайд презентации с интерфейсами приложения MindCare"
-                  fill
-                  unoptimized
-                  sizes="(max-width: 900px) 92vw, 42vw"
-                />
-              </div>
-              <div className="slide slide-secondary">
-                <Image
-                  src="/work/presentations/mindcare-survey.webp"
-                  alt="Слайд с результатами пользовательского опроса MindCare"
-                  fill
-                  unoptimized
-                  sizes="(max-width: 900px) 60vw, 24vw"
-                />
-              </div>
-              <span className="deck-count">13 слайдов</span>
-            </div>
-            <div className="deck-copy">
-              <p className="case-index">03 / Концепция · Дизайн · UI/UX ·  </p>
-              <h3>MindCare — от исследования к прототипу</h3>
-              <p>
-                Исследование аудитории, конкурентный анализ и презентация
-                цифрового продукта в единой визуальной истории.
-              </p>
-              <div className="deck-skills">
-                <span>UX-исследование</span>
-                <span>Figma</span>
-                <span>Прототип</span>
-              </div>
-              <a
-                className="deck-link"
-                href="/decks/mindcare.pdf"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Смотреть презентацию <span aria-hidden="true">↗</span>
-              </a>
-            </div>
-          </article>
-
-          <article className="deck-case">
             <div className="deck-preview deck-preview-mint">
               <div className="slide slide-main">
                 <Image
@@ -461,7 +499,7 @@ export default function Home() {
               <span className="deck-count">33 страницы</span>
             </div>
             <div className="deck-copy">
-              <p className="case-index">04 / Brand guideline</p>
+              <p className="case-index">03 / Brand guideline</p>
               <h3>ProHome — брендбук и система носителей</h3>
               <p>
                 Айдентика, палитра, типографика, паттерны и правила применения
@@ -506,7 +544,7 @@ export default function Home() {
               <span className="deck-count">12 слайдов</span>
             </div>
             <div className="deck-copy">
-              <p className="case-index">05 / Product concept</p>
+              <p className="case-index">04 / Product concept</p>
               <h3>Career Manager — сервис развития портфолио</h3>
               <p>
                 Концепция смежного продукта для Behance: проблема, аудитория,
@@ -524,6 +562,14 @@ export default function Home() {
                 rel="noreferrer"
               >
                 Смотреть презентацию <span aria-hidden="true">↗</span>
+              </a>
+              <a
+                className="deck-link deck-link-secondary"
+                href="https://www.figma.com/proto/niniMH68H6UCQD6iClts4L/%D1%83%D0%BF%D1%80-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0%D0%BC%D0%B8?page-id=0%3A1&node-id=74-74&viewport=218%2C314%2C0.1&t=0q5Ls5LSs6jhzBcf-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=74%3A74"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Открыть прототип <span aria-hidden="true">↗</span>
               </a>
             </div>
           </article>
