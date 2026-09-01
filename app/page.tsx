@@ -521,7 +521,7 @@ export default function Home() {
             </div>
           </article>
 
-          <article className="deck-case deck-case-wide">
+          <article className="deck-case">
             <div className="deck-preview deck-preview-career">
               <div className="slide slide-main">
                 <Image

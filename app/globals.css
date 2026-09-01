@@ -1573,7 +1573,7 @@ a:focus-visible {
   min-width: 0;
   display: grid;
   grid-template-columns: minmax(270px, 0.86fr) 56px minmax(340px, 1.14fr);
-  align-items: center;
+  align-items: start;
   gap: 14px;
   padding: 18px;
   background:
@@ -1636,6 +1636,7 @@ a:focus-visible {
 }
 
 .horizon-transition {
+  align-self: center;
   display: grid;
   justify-items: center;
   gap: 8px;
