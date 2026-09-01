@@ -25,6 +25,8 @@ const tools = [
   "Kling",
   "Veo",
   "Nano Banana",
+  "CapCut",
+  "ChatGPT",
 ];
 
 // ТРИ КАРТОЧКИ НАПРАВЛЕНИЙ сразу под первым экраном.
