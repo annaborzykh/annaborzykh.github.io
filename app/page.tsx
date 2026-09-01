@@ -611,9 +611,10 @@ export default function Home() {
             <h3>Content Designer / Graphic Designer</h3>
             <p>МетроТрансМост · 02.2026 — н.в.</p>
             <ul>
-              <li>Визуальный и видеоконтент</li>
-              <li>Презентации и digital-материалы</li>
-              <li>AI-видео и генеративная графика</li>
+              <li>Видеомонтаж · Adobe Premiere Pro</li>
+              <li>AI-видео · Kling 3.0, Veo</li>
+              <li>AI-визуалы · ChatGPT, Nano Banana</li>
+              <li>Ретушь · Adobe Photoshop</li>
             </ul>
           </div>
         </div>
