@@ -1574,6 +1574,7 @@ a:focus-visible {
   display: grid;
   grid-template-columns: minmax(270px, 0.86fr) 56px minmax(340px, 1.14fr);
   align-items: start;
+  align-content: center;
   gap: 14px;
   padding: 18px;
   background:
@@ -1664,6 +1665,7 @@ a:focus-visible {
 
 .deck-link-secondary {
   margin-top: 10px;
+  margin-left: 12px;
   background: var(--plum);
   color: white;
 }
@@ -1690,6 +1692,10 @@ a:focus-visible {
 }
 
 @media (max-width: 520px) {
+  .deck-link-secondary {
+    margin-left: 0;
+  }
+
   .horizon-story {
     padding: 12px;
   }
