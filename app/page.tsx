@@ -636,7 +636,7 @@ export default function Home() {
       <footer className="section footer" id="contacts">
         <div>
           <p className="eyebrow">Контакты</p>
-          <h2>Давайте сделаем что-нибудь сильное</h2>
+          <h2>Давайте сделаем <br />что-нибудь сильное</h2>
         </div>
         <div className="contact-list">
           <p>
