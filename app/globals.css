@@ -824,7 +824,7 @@ a:focus-visible {
 .deck-case-wide {
   grid-column: 1 / -1;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(360px, 0.72fr);
+  grid-template-columns: minmax(0, 1.25fr) minmax(360px, 0.75fr);
 }
 
 .deck-preview {
@@ -834,7 +834,7 @@ a:focus-visible {
   isolation: isolate;
 }
 
-.deck-case:not(.deck-case-featured) .deck-preview {
+.deck-case:not(.deck-case-featured):not(.deck-case-wide) .deck-preview {
   min-height: 410px;
 }
 
