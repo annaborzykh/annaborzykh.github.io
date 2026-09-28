@@ -651,7 +651,7 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Ссылка на&nbsp;резюме
+                Ссылка на резюме
               </a>
 </strong>
           </p>
