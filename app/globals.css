@@ -1458,7 +1458,7 @@ a:focus-visible {
 
 /* Видеокейсы */
 .video-portfolio-case {
-  grid-template-columns: minmax(0, 1.3fr) minmax(340px, 0.7fr);
+  grid-template-columns: minmax(0, 1.55fr) minmax(340px, 0.65fr);
 }
 
 .video-showcase-grid {
@@ -1466,7 +1466,7 @@ a:focus-visible {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   align-items: start;
-  gap: 18px;
+  gap: 28px;
   padding: 18px;
   background:
     radial-gradient(circle at 18% 5%, rgba(140, 74, 165, 0.28), transparent 24rem),
