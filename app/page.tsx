@@ -611,7 +611,7 @@ export default function Home() {
           <div className="about-card experience-card">
             <span className="card-label">Опыт работы</span>
             <h3>Content Designer / Graphic Designer</h3>
-            <p>МетроТрансМост · 02.2026 — н.в.</p>
+            <p>МетроТрансМост · 02.2026 — 09.2026</p>
             <ul>
               <li>Видеомонтаж · Adobe Premiere Pro</li>
               <li>AI-видео · Kling 3.0, Veo</li>
