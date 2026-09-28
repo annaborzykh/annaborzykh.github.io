@@ -1573,7 +1573,7 @@ a:focus-visible {
 
 /* Кейс «Горизонт»: путь от технической модели к финальному видео */
 .horizon-case {
-  grid-template-columns: minmax(0, 1.5fr) minmax(330px, 0.5fr);
+  grid-template-columns: minmax(0, 1.55fr) minmax(340px, 0.65fr);
 }
 
 .horizon-story {
