@@ -637,11 +637,17 @@ export default function Home() {
         <div className="contact-list">
           <p>
             <span>Telegram</span>
-            <strong>@ann_brz</strong>
+            <strong>
+              <a href="https://t.me/ann_brz" target="_blank" rel="noopener noreferrer">
+                @ann_brz
+              </a>
+            </strong>
           </p>
           <p>
             <span>Email</span>
-            <strong>annaborzykh@mail.ru</strong>
+            <strong>
+              <a href="mailto:annaborzykh@mail.ru">annaborzykh@mail.ru</a>
+            </strong>
           </p>
           <p>
             <span>HeadHunter</span>
