@@ -4,7 +4,7 @@ import path from "node:path";
 const root = path.resolve("out");
 const basePath = "/portfolio_source_with_comments";
 const textExtensions = new Set([".html", ".css", ".js", ".json", ".txt", ".rsc"]);
-const rootAsset = /(?<![\w/-])\/(work|decks)\//g;
+const rootAsset = /(?<![\w/-])\/(work|decks|slides)\//g;
 const rootFavicon = /(?<![\w/-])\/favicon\.svg/g;
 
 async function rewrite(directory) {
