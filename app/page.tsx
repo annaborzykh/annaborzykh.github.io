@@ -1,4 +1,5 @@
 import Image from "next/image";
+import SlideGallery from "./SlideGallery";
 
 /*
  * ГЛАВНЫЙ ФАЙЛ СОДЕРЖИМОГО САЙТА
@@ -11,7 +12,7 @@ import Image from "next/image";
  * заменить на:
  *   <h3>Новое название</h3>
  *
- * Файлы изображений, видео и PDF лежат в папке public/.
+ * Файлы изображений, видео и слайдов лежат в папке public/.
  * Путь "/work/photo.webp" означает файл public/work/photo.webp.
  */
 
@@ -370,7 +371,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ПРЕЗЕНТАЦИИ. У каждой карточки есть два превью и ссылка на PDF в public/decks/. */}
+      {/* ПРЕЗЕНТАЦИИ. У каждой карточки есть два превью и галерея слайдов. */}
       <section className="section presentation-showcase" id="presentations">
         <div className="presentation-heading">
           <div>
@@ -418,14 +419,7 @@ export default function Home() {
                 <span>Сторителлинг</span>
                 <span>Визуализация мерча</span>
               </div>
-              <a
-                className="deck-link"
-                href="/decks/vk-ai-merch.pdf"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Смотреть презентацию <span aria-hidden="true">↗</span>
-              </a>
+              <SlideGallery slug="vk-ai-merch" title="Корпоративный мерч как интерфейс доверия" count={19} />
             </div>
           </article>
 
@@ -463,14 +457,7 @@ export default function Home() {
                 <span>Сторителлинг</span>
                 <span>AI-визуализация</span>
               </div>
-              <a
-                className="deck-link"
-                href="/decks/moscow-city-bridge.pdf"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Смотреть презентацию <span aria-hidden="true">↗</span>
-              </a>
+              <SlideGallery slug="moscow-city-bridge" title="Пешеходный мост в Москва-Сити" count={8} />
             </div>
           </article>
 
@@ -508,14 +495,7 @@ export default function Home() {
                 <span>Гайдлайн</span>
                 <span>Носители</span>
               </div>
-              <a
-                className="deck-link"
-                href="/decks/prohome-brandbook.pdf"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Смотреть презентацию <span aria-hidden="true">↗</span>
-              </a>
+              <SlideGallery slug="prohome-brandbook" title="ProHome — брендбук и система носителей" count={33} />
             </div>
           </article>
 
@@ -553,14 +533,7 @@ export default function Home() {
                 <span>Аналитика</span>
                 <span>Макет</span>
               </div>
-              <a
-                className="deck-link"
-                href="/decks/career-manager.pdf"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Смотреть презентацию <span aria-hidden="true">↗</span>
-              </a>
+              <SlideGallery slug="career-manager" title="Career Manager — сервис развития портфолио" count={12} />
               <a
                 className="deck-link deck-link-secondary"
                 href="https://www.figma.com/proto/niniMH68H6UCQD6iClts4L/%D1%83%D0%BF%D1%80-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0%D0%BC%D0%B8?page-id=0%3A1&node-id=74-74&viewport=218%2C314%2C0.1&t=0q5Ls5LSs6jhzBcf-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=74%3A74"
