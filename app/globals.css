@@ -1086,6 +1086,11 @@ a:focus-visible {
   color: var(--white);
 }
 
+.experience-card .card-label {
+  padding: 7px 12px;
+  font-size: 12px;
+}
+
 .experience-card h3 {
   margin: 80px 0 10px;
   font-size: clamp(30px, 3vw, 45px);
@@ -1102,8 +1107,10 @@ a:focus-visible {
 }
 
 .experience-card li {
+  padding: 10px 14px;
   border-color: rgba(255, 255, 255, 0.2);
   background: rgba(255, 255, 255, 0.08);
+  font-size: 13px;
 }
 
 .toolkit {
@@ -1451,7 +1458,7 @@ a:focus-visible {
 
 /* Видеокейсы */
 .video-portfolio-case {
-  grid-template-columns: minmax(0, 1.3fr) minmax(340px, 0.7fr);
+  grid-template-columns: minmax(0, 1.55fr) minmax(340px, 0.65fr);
 }
 
 .video-showcase-grid {
@@ -1459,7 +1466,7 @@ a:focus-visible {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   align-items: start;
-  gap: 18px;
+  gap: 28px;
   padding: 18px;
   background:
     radial-gradient(circle at 18% 5%, rgba(140, 74, 165, 0.28), transparent 24rem),
@@ -1566,7 +1573,7 @@ a:focus-visible {
 
 /* Кейс «Горизонт»: путь от технической модели к финальному видео */
 .horizon-case {
-  grid-template-columns: minmax(0, 1.5fr) minmax(330px, 0.5fr);
+  grid-template-columns: minmax(0, 1.55fr) minmax(340px, 0.65fr);
 }
 
 .horizon-story {
