@@ -1715,3 +1715,86 @@ a:focus-visible {
     min-height: 94px;
   }
 }
+
+
+/* Навигация и читаемость на узких экранах. */
+.contact-list a {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+@media (max-width: 800px) {
+  .site-header {
+    flex-wrap: wrap;
+    padding-block: 12px;
+  }
+
+  .site-header nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 4px;
+    font-size: 14px;
+  }
+
+  .site-header nav a {
+    display: inline-flex;
+    min-height: 44px;
+    align-items: center;
+  }
+}
+
+@media (max-width: 520px) {
+  .hero h1 {
+    font-size: clamp(34px, 9vw, 43px);
+    line-height: 1.03;
+  }
+
+  .section-heading h2,
+  .presentation-heading h2,
+  .about-intro h2,
+  .footer h2 {
+    font-size: clamp(30px, 8vw, 40px);
+  }
+
+  .case-copy,
+  .case-copy.compact,
+  .deck-copy,
+  .deck-case-featured .deck-copy,
+  .deck-case-wide .deck-copy {
+    padding: 22px;
+  }
+
+  .video-showcase-grid {
+    grid-auto-columns: minmax(0, 82%);
+    gap: 12px;
+    padding: 12px;
+  }
+
+  .footer {
+    padding-inline: 22px;
+  }
+
+  .contact-list p {
+    display: grid;
+    justify-content: stretch;
+    gap: 5px;
+    padding-block: 15px;
+  }
+
+  .contact-list strong {
+    overflow-wrap: anywhere;
+  }
+}
+
+@media (max-width: 360px) {
+  .site-header nav {
+    gap: 8px;
+    font-size: 13px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+}
