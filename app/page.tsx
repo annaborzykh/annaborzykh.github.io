@@ -623,14 +623,14 @@ export default function Home() {
             </strong>
           </p>
           <p>
-            <span>HeadHunter</span>
+            <span>Резюме</span>
             <strong>
               <a
-                href="https://hh.ru/resume/7764d7abff08f8f3d90039ed1f516777534741?hhtmFrom=main"
+                href="/resume/anna-borzykh.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Ссылка на резюме
+                Открыть резюме · PDF
               </a>
 </strong>
           </p>
