@@ -205,7 +205,7 @@ export default function Home() {
                 <h3>Fashion-кейс: <span className="project-line-break">{" "}</span>от&nbsp;авторского принта до&nbsp;ролика</h3>
               </div>
               <p>
-                Разработала принт и&nbsp;сама адаптировала его под одежду: от&nbsp;исходной графики <span className="project-line-break">{" "}</span>и&nbsp;визуализации на&nbsp;носителях<span className="project-line-break">{" "}</span> до&nbsp;финального
+                Разработала принт и&nbsp;сама адаптировала его под&nbsp;одежду: от&nbsp;исходной графики <span className="project-line-break">{" "}</span>и&nbsp;визуализации на&nbsp;носителях<span className="project-line-break">{" "}</span> до&nbsp;финального
                 fashion-ролика.
               </p>
               <ul aria-label="Роль в проекте">
