@@ -202,10 +202,10 @@ export default function Home() {
             <div className="case-copy merch-copy">
               <div>
                 <p className="case-index">01 / Принт · AI-контент · Видео</p>
-                <h3>Fashion-кейс: <br />от&nbsp;авторского принта до&nbsp;ролика</h3>
+                <h3>Fashion-кейс: <span className="project-line-break">{" "}</span>от&nbsp;авторского принта до&nbsp;ролика</h3>
               </div>
               <p>
-                Разработала принт и&nbsp;сама адаптировала его под одежду: от&nbsp;исходной графики <br />и&nbsp;визуализации на&nbsp;носителях<br /> до&nbsp;финального
+                Разработала принт и&nbsp;сама адаптировала его под&nbsp;одежду: от&nbsp;исходной графики <span className="project-line-break">{" "}</span>и&nbsp;визуализации на&nbsp;носителях<span className="project-line-break">{" "}</span> до&nbsp;финального
                 fashion-ролика.
               </p>
               <ul aria-label="Роль в проекте">
@@ -277,7 +277,7 @@ export default function Home() {
                 <h3>Цифровые технологии как визуальная история</h3>
               </div>
               <p>
-                Два ролика о&nbsp;строительных продуктах:<br /> от&nbsp;разработки сценария и&nbsp;генерации кадров<br /> до&nbsp;монтажа и&nbsp;цельной визуальной драматургии.
+                Два ролика о&nbsp;строительных продуктах:<span className="project-line-break">{" "}</span> от&nbsp;разработки сценария и&nbsp;генерации кадров<span className="project-line-break">{" "}</span> до&nbsp;монтажа и&nbsp;цельной визуальной драматургии.
               </p>
               <ul aria-label="Роль в проектах">
                 <li>Сценарий и&nbsp;раскадровка</li>
@@ -354,11 +354,11 @@ export default function Home() {
             <div className="case-copy horizon-copy">
               <div>
                 <p className="case-index">03 / 3D · AI-видео · Архитектура</p>
-                <h3>«Горизонт»: <br />от&nbsp;модели<br /> к&nbsp;визуальной истории</h3>
+                <h3>«Горизонт»: <span className="project-line-break">{" "}</span>от&nbsp;модели<span className="project-line-break">{" "}</span> к&nbsp;визуальной истории</h3>
               </div>
               <p>
                 Рабочая 3D-модель задала геометрию объекта. Затем форма получила
-                материалы, свет, окружение<br /> и&nbsp;движение — и&nbsp;превратилась<br /> в&nbsp;кинематографичный архитектурный ролик.
+                материалы, свет, окружение<span className="project-line-break">{" "}</span> и&nbsp;движение — и&nbsp;превратилась<span className="project-line-break">{" "}</span> в&nbsp;кинематографичный архитектурный ролик.
               </p>
               <ul aria-label="Этапы проекта">
                 <li>Работа с&nbsp;исходной 3D-моделью</li>
