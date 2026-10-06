@@ -1945,3 +1945,9 @@ button.deck-link {
     margin-left: auto;
   }
 }
+
+/* Переносы кейсов: заданная композиция на компьютере, свободная на телефоне. */
+.project-line-break { display: block; }
+@media (max-width: 800px) {
+  .project-line-break { display: inline; }
+}
